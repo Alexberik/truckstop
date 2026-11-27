@@ -1,42 +1,19 @@
-# Изображения и Lazy Loading
+# Truck Stop image assets
 
-## Оптимизированные изображения
-Все фото уже оптимизированы:
-- JPG quality 82 + progressive
-- WebP версии
-- Максимум 1200px по длинной стороне
-- Метаданные удалены
+All website images are stored in `truckstop-images/`.
 
-Папка: `images/brand/` и `images/products/`
+- `truckstop-images/brand/` — logo and brand banner
+- `truckstop-images/products/` — product photos
 
-## Как работает lazy loading на сайте
+Product photos are supplied in JPG and WebP formats. Use WebP in the `<source>` element and JPG as the fallback in each `<picture>` element.
 
-1. **Native lazy loading** — на всех товарах стоит `loading="lazy"`
-2. **decoding="async"** — не блокирует рендер
-3. **fetchpriority="high"** — только у hero-баннера
-4. **picture + WebP** — браузер сам выбирает лучший формат
-5. Плавное появление через CSS (класс `.lazy` → `.loaded`)
-
-### Пример правильной разметки товара:
+Example:
 
 ```html
 <picture>
-  <source srcset="images/products/19_multivarka.webp" type="image/webp" />
-  <img
-    src="images/products/19_multivarka.jpg"
-    alt="Мультиварка 24В"
-    width="600"
-    height="600"
-    loading="lazy"
-    decoding="async"
-    class="lazy"
-  />
+  <source srcset="../truckstop-images/products/19_multivarka.webp" type="image/webp" />
+  <img src="../truckstop-images/products/19_multivarka.jpg" alt="24V multicooker for truck cabins" loading="lazy" decoding="async" />
 </picture>
 ```
 
-## Что нужно сделать
-1. Создай папку `images` в корне репозитория
-2. Залей туда содержимое из артефактов проекта (`truckstop-images/brand` и `truckstop-images/products`)
-3. Или скачай оптимизированные файлы и положи в `images/brand/` и `images/products/`
-
-После этого сайт будет полностью работать с ленивой загрузкой.
+Use paths relative to the page location: root page uses `truckstop-images/...`; language pages in `ru/` and `ka/` use `../truckstop-images/...`.
