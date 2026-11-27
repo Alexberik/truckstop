@@ -21,7 +21,6 @@
 - `index.html` — English homepage and product catalogue
 - `ru/index.html` — Russian version
 - `ka/index.html` — Georgian version
-- `tailwind.css` — locally bundled styles
 - `truckstop-images/brand/` — brand logo and banner
 - `truckstop-images/products/` — product photography (JPG and WebP)
 - `google0afb946164473d6a.html` — Google Search Console verification; keep in the repository root
