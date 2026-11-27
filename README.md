@@ -1,35 +1,41 @@
-# TruckStop
+# Truck Stop
 
-Магазин аксессуаров и товаров для грузовых автомобилей.
-**Локация:** окружная Тбилиси (продажа с машины + онлайн).
+**Truck Stop** is an online store specializing in accessories and useful products for trucks and professional drivers.
 
-Сайт: https://alexberik.github.io/truckstop/
+- **Location:** Tbilisi, Georgia
+- **Ordering:** Online via WhatsApp
+- **Delivery:** Options and timing are confirmed when ordering
+- **WhatsApp:** +995 511 493 394
+- **Email:** alexberik@gmail.com
+- **Instagram:** https://www.instagram.com/truckstop_tbs/
+- **Facebook:** https://www.facebook.com/profile.php?id=61596573707524
 
-## Структура репозитория
+## Website languages
 
-```
-index.html                       — сайт (статический HTML, каталог виден поисковикам и ИИ)
-tailwind.css                     — стили (собраны локально, без CDN)
-truckstop-images/brand/          — логотип, баннеры
-truckstop-images/products/       — фото товаров (jpg + webp)
-google0afb946164473d6a.html      — подтверждение Google Search Console (не удалять, держать в корне)
-robots.txt, sitemap.xml          — для поисковиков
-.nojekyll                        — отключает Jekyll на GitHub Pages
-```
+- English (default): https://alexberik.github.io/truckstop/
+- Russian: https://alexberik.github.io/truckstop/ru/
+- Georgian: https://alexberik.github.io/truckstop/ka/
 
-## Публикация (GitHub Pages)
+## Repository structure
 
-Settings → Pages → Source: Deploy from a branch → Branch: `main`, папка `/ (root)` → Save.
+- `index.html` — English homepage and product catalogue
+- `ru/index.html` — Russian version
+- `ka/index.html` — Georgian version
+- `tailwind.css` — locally bundled styles
+- `truckstop-images/brand/` — brand logo and banner
+- `truckstop-images/products/` — product photography (JPG and WebP)
+- `google0afb946164473d6a.html` — Google Search Console verification; keep in the repository root
+- `robots.txt`, `sitemap.xml` — search engine files
+- `.nojekyll` — GitHub Pages configuration
 
-## Что осталось заполнить
+## Product focus
 
-В `index.html` найди и замени:
+Truck cabin accessories, 12/24V appliances, phone and tablet holders, lighting, drinkware, storage, comfort and practical driver essentials. The store does not offer unrelated services or general automotive repair.
 
-- `https://wa.me/995` (2 места) → `https://wa.me/ТВОЙ_НОМЕР` (в международном формате, без + и пробелов)
-- `href="#"` у иконок Instagram, Facebook, TikTok → ссылки на твои страницы
-- Строка «Ссылки скоро будут активны» → удалить, когда ссылки вставлены
+## GitHub Pages
 
-## Добавить товар
+Settings → Pages → Deploy from a branch → `main` → `/(root)`.
 
-Скопируй блок `<article class="product-cell" ...>` в разделе каталога, поменяй имя файла фото, артикул, название и `data-cat` (`kitchen`, `holders`, `light`, `comfort`, `supplies`).
-Фото кладутся в `truckstop-images/products/` в двух форматах: `имя.jpg` и `имя.webp`.
+## Adding products
+
+Add a product card to the catalogue in all three language files. Store product images in `truckstop-images/products/` in JPG and WebP formats. Keep image paths consistent with the existing naming convention.
