@@ -1,56 +1,35 @@
 # TruckStop
 
-Магазин аксессуаров и товаров для грузовых автомобилей.  
+Магазин аксессуаров и товаров для грузовых автомобилей.
 **Локация:** окружная Тбилиси (продажа с машины + онлайн).
 
-🌐 **Сайт готов к запуску**
+Сайт: https://alexberik.github.io/truckstop/
 
-## Что уже сделано
-
-- Индустриальный дизайн (Freitag-inspired)
-- Полный каталог товаров (16 позиций)
-- Lazy loading изображений + поддержка WebP
-- Иконки **WhatsApp, Instagram, Facebook, TikTok** в футере
-- Полная мобильная адаптация
-- Meta-теги, Open Graph, favicon
-
-## Как добавить фото товаров (обязательный шаг)
-
-1. Возьми оптимизированные изображения из папки проекта `truckstop-images`
-2. В репозитории создай структуру:
+## Структура репозитория
 
 ```
-images/
-├── brand/
-│   ├── logo.jpg
-│   ├── logo.webp
-│   ├── banner.jpg
-│   └── ...
-└── products/
-    ├── 19_multivarka.jpg
-    ├── 19_multivarka.webp
-    ├── 27_chainik500.jpg
-    └── ...
+index.html                       — сайт (статический HTML, каталог виден поисковикам и ИИ)
+tailwind.css                     — стили (собраны локально, без CDN)
+truckstop-images/brand/          — логотип, баннеры
+truckstop-images/products/       — фото товаров (jpg + webp)
+google0afb946164473d6a.html      — подтверждение Google Search Console (не удалять, держать в корне)
+robots.txt, sitemap.xml          — для поисковиков
+.nojekyll                        — отключает Jekyll на GitHub Pages
 ```
 
-Самый простой способ:  
-GitHub → Add file → Upload files → перетащи папки `brand` и `products`.
+## Публикация (GitHub Pages)
 
-После загрузки картинок сайт будет полностью рабочим.
+Settings → Pages → Source: Deploy from a branch → Branch: `main`, папка `/ (root)` → Save.
 
-## Включить GitHub Pages (публикация сайта)
+## Что осталось заполнить
 
-1. Зайди в репозиторий → **Settings** → **Pages**
-2. Source: **Deploy from a branch**
-3. Branch: `main` → folder `/ (root)` → **Save**
+В `index.html` найди и замени:
 
-Через 1–2 минуты сайт откроется по адресу:  
-**https://alexberik.github.io/truckstop/**
+- `https://wa.me/995` (2 места) → `https://wa.me/ТВОЙ_НОМЕР` (в международном формате, без + и пробелов)
+- `href="#"` у иконок Instagram, Facebook, TikTok → ссылки на твои страницы
+- Строка «Ссылки скоро будут активны» → удалить, когда ссылки вставлены
 
-## Важно
+## Добавить товар
 
-- В футере стоит заглушка WhatsApp (`wa.me/995`). Замени на свой реальный номер.
-- Ссылки на Instagram / Facebook / TikTok пока пустые — вставь свои.
-
----
-TruckStop · Тбилиси · 2026
+Скопируй блок `<article class="product-cell" ...>` в разделе каталога, поменяй имя файла фото, артикул, название и `data-cat` (`kitchen`, `holders`, `light`, `comfort`, `supplies`).
+Фото кладутся в `truckstop-images/products/` в двух форматах: `имя.jpg` и `имя.webp`.

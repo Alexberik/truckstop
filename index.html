@@ -19,10 +19,15 @@
   <meta property="og:description" content="24В техника, держатели, освещение, термосы и расходники для дальнобойщиков. Продажа с машины на окружной Тбилиси + онлайн." />
   <meta property="og:locale" content="ru_GE" />
   <meta property="og:site_name" content="TruckStop" />
+  <meta property="og:image" content="https://alexberik.github.io/truckstop/truckstop-images/brand/banner.jpg" />
+  <meta property="og:image:width" content="1584" />
+  <meta property="og:image:height" content="672" />
+  <meta property="og:image:alt" content="TruckStop — аксессуары и товары для грузовиков, Тбилиси" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="TruckStop — аксессуары для грузовиков | Тбилиси" />
+  <meta name="twitter:image" content="https://alexberik.github.io/truckstop/truckstop-images/brand/banner.jpg" />
   <meta name="twitter:description" content="24В чайники, мультиварки, держатели, габариты. Продажа с машины на окружной + онлайн." />
 
   <meta name="theme-color" content="#000000" />
@@ -30,53 +35,165 @@
 
   <!-- Structured Data for Google + AI -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "TruckStop",
-    "description": "Магазин аксессуаров и товаров для грузовых автомобилей в Тбилиси. 24В техника для кабины, держатели, освещение, термосы. Продажа с машины на окружной дороге и онлайн.",
-    "url": "https://alexberik.github.io/truckstop/",
-    "telephone": "",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Тбилиси",
-      "addressRegion": "Тбилиси",
-      "addressCountry": "GE",
-      "streetAddress": "Окружная дорога (рядом с терминалом)"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "41.7151",
-      "longitude": "44.8271"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-      "opens": "08:00",
-      "closes": "20:00"
-    },
-    "priceRange": "$$",
-    "servesCuisine": null,
-    "areaServed": {
-      "@type": "City",
-      "name": "Тбилиси"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Аксессуары для грузовиков",
-      "itemListElement": [
-        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Чайник 24В"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Мультиварка 24В"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Держатель телефона для кабины"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Габаритные огни для прицепа"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Термокружка"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Фонарь налобный"}}
-      ]
-    }
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "TruckStop",
+  "description": "Магазин аксессуаров и товаров для грузовых автомобилей в Тбилиси. 24В техника для кабины, держатели, освещение, термосы. Продажа с машины на окружной дороге и онлайн.",
+  "url": "https://alexberik.github.io/truckstop/",
+  "logo": "https://alexberik.github.io/truckstop/truckstop-images/brand/logo.jpg",
+  "image": [
+    "https://alexberik.github.io/truckstop/truckstop-images/brand/banner.jpg",
+    "https://alexberik.github.io/truckstop/truckstop-images/brand/logo.jpg"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Тбилиси",
+    "addressCountry": "GE",
+    "streetAddress": "Окружная дорога (рядом с терминалом)"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Тбилиси"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Аксессуары для грузовиков",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Мультиварка 24В",
+          "image": "https://alexberik.github.io/truckstop/truckstop-images/products/19_multivarka.jpg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Чайник 24В 0.5л",
+          "image": "https://alexberik.github.io/truckstop/truckstop-images/products/27_chainik500.jpg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Чайник 24В 1.2л",
+          "image": "https://alexberik.github.io/truckstop/truckstop-images/products/26_chainik12.jpg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Держатель телефона",
+          "image": "https://alexberik.github.io/truckstop/truckstop-images/products/07_derzhatel.jpg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Держатель планшета",
+          "image": "https://alexberik.github.io/truckstop/truckstop-images/products/08_derzhatel2.jpg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Термокружка",
+          "image": "https://alexberik.github.io/truckstop/truckstop-images/products/24_termokruzhka.jpg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Термос 610 мл",
+          "image": "https://alexberik.github.io/truckstop/truckstop-images/products/23_termo610.jpg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Фонарь налобный",
+          "image": "https://alexberik.github.io/truckstop/truckstop-images/products/25_fonar.jpg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Канистра 10 л",
+          "image": "https://alexberik.github.io/truckstop/truckstop-images/products/14_kanistra.jpg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Габариты прицепа",
+          "image": "https://alexberik.github.io/truckstop/truckstop-images/products/05_gabarity.jpg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Ароматизатор",
+          "image": "https://alexberik.github.io/truckstop/truckstop-images/products/03_aromatizator.jpg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Зарядка в прикуриватель",
+          "image": "https://alexberik.github.io/truckstop/truckstop-images/products/12_zaryadka.jpg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Щётка для снега",
+          "image": "https://alexberik.github.io/truckstop/truckstop-images/products/31_schetka.jpg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Коврик в салон",
+          "image": "https://alexberik.github.io/truckstop/truckstop-images/products/16_kovrik.jpg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Кружка 450 мл",
+          "image": "https://alexberik.github.io/truckstop/truckstop-images/products/01_cup_450ml.jpg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Пылесос автомобильный",
+          "image": "https://alexberik.github.io/truckstop/truckstop-images/products/21_pylesos.jpg"
+        }
+      }
+    ]
   }
+}
   </script>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="tailwind.css" />
   <style>
     :root {
       --ink: #000000;
@@ -138,7 +255,7 @@
   <!-- NAV -->
   <header class="sticky top-0 z-50 bg-white border-b border-[#cacaca]">
     <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
-      <a href="/" class="logo-plate" title="TruckStop — аксессуары для грузовиков Тбилиси">TruckStop</a>
+      <a href="./" class="logo-plate" title="TruckStop — аксессуары для грузовиков Тбилиси">TruckStop</a>
       <nav class="hidden md:flex gap-6 text-xs uppercase tracking-wider" aria-label="Основная навигация">
         <a href="#catalog" class="hover:opacity-60">Каталог</a>
         <a href="#about" class="hover:opacity-60">О нас</a>
@@ -181,12 +298,12 @@
   <!-- CATEGORIES -->
   <section class="max-w-6xl mx-auto px-4 py-8" aria-label="Категории товаров">
     <div class="flex flex-wrap gap-2">
-      <a href="#catalog" class="pill pill-ghost">Все</a>
-      <a href="#catalog" class="pill border border-[#cacaca] hover:border-black">24В Кухня</a>
-      <a href="#catalog" class="pill border border-[#cacaca] hover:border-black">Держатели</a>
-      <a href="#catalog" class="pill border border-[#cacaca] hover:border-black">Освещение</a>
-      <a href="#catalog" class="pill border border-[#cacaca] hover:border-black">Комфорт</a>
-      <a href="#catalog" class="pill border border-[#cacaca] hover:border-black">Расходники</a>
+      <button type="button" data-filter="all" class="pill pill-ghost" aria-pressed="true">Все</button>
+      <button type="button" data-filter="kitchen" class="pill border border-[#cacaca] hover:border-black" aria-pressed="false">24В Кухня</button>
+      <button type="button" data-filter="holders" class="pill border border-[#cacaca] hover:border-black" aria-pressed="false">Держатели</button>
+      <button type="button" data-filter="light" class="pill border border-[#cacaca] hover:border-black" aria-pressed="false">Освещение</button>
+      <button type="button" data-filter="comfort" class="pill border border-[#cacaca] hover:border-black" aria-pressed="false">Комфорт</button>
+      <button type="button" data-filter="supplies" class="pill border border-[#cacaca] hover:border-black" aria-pressed="false">Расходники</button>
     </div>
   </section>
 
@@ -198,6 +315,230 @@
     </div>
 
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-px bg-[#cacaca] border border-[#cacaca]" id="product-grid">
+      <article class="product-cell bg-white" data-cat="kitchen">
+        <div class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden relative">
+            <picture>
+              <source srcset="truckstop-images/products/19_multivarka.webp" type="image/webp" />
+              <img src="truckstop-images/products/19_multivarka.jpg" alt="Мультиварка 24В — аксессуар для грузовика TruckStop Тбилиси" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="eager" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-MV-24</p>
+            <h3 class="text-sm font-medium leading-snug">Мультиварка 24В</h3>
+          </div>
+        </div>
+      </article>
+      <article class="product-cell bg-white" data-cat="kitchen">
+        <div class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden relative">
+            <picture>
+              <source srcset="truckstop-images/products/27_chainik500.webp" type="image/webp" />
+              <img src="truckstop-images/products/27_chainik500.jpg" alt="Чайник 24В 0.5л — аксессуар для грузовика TruckStop Тбилиси" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="eager" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-KET-05</p>
+            <h3 class="text-sm font-medium leading-snug">Чайник 24В 0.5л</h3>
+          </div>
+        </div>
+      </article>
+      <article class="product-cell bg-white" data-cat="kitchen">
+        <div class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden relative">
+            <picture>
+              <source srcset="truckstop-images/products/26_chainik12.webp" type="image/webp" />
+              <img src="truckstop-images/products/26_chainik12.jpg" alt="Чайник 24В 1.2л — аксессуар для грузовика TruckStop Тбилиси" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="eager" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-KET-12</p>
+            <h3 class="text-sm font-medium leading-snug">Чайник 24В 1.2л</h3>
+          </div>
+        </div>
+      </article>
+      <article class="product-cell bg-white" data-cat="holders">
+        <div class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden relative">
+            <picture>
+              <source srcset="truckstop-images/products/07_derzhatel.webp" type="image/webp" />
+              <img src="truckstop-images/products/07_derzhatel.jpg" alt="Держатель телефона — аксессуар для грузовика TruckStop Тбилиси" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="eager" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-HOLD-01</p>
+            <h3 class="text-sm font-medium leading-snug">Держатель телефона</h3>
+          </div>
+        </div>
+      </article>
+      <article class="product-cell bg-white" data-cat="holders">
+        <div class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden relative">
+            <picture>
+              <source srcset="truckstop-images/products/08_derzhatel2.webp" type="image/webp" />
+              <img src="truckstop-images/products/08_derzhatel2.jpg" alt="Держатель планшета — аксессуар для грузовика TruckStop Тбилиси" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-HOLD-02</p>
+            <h3 class="text-sm font-medium leading-snug">Держатель планшета</h3>
+          </div>
+        </div>
+      </article>
+      <article class="product-cell bg-white" data-cat="comfort">
+        <div class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden relative">
+            <picture>
+              <source srcset="truckstop-images/products/24_termokruzhka.webp" type="image/webp" />
+              <img src="truckstop-images/products/24_termokruzhka.jpg" alt="Термокружка — аксессуар для грузовика TruckStop Тбилиси" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-TM-01</p>
+            <h3 class="text-sm font-medium leading-snug">Термокружка</h3>
+          </div>
+        </div>
+      </article>
+      <article class="product-cell bg-white" data-cat="comfort">
+        <div class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden relative">
+            <picture>
+              <source srcset="truckstop-images/products/23_termo610.webp" type="image/webp" />
+              <img src="truckstop-images/products/23_termo610.jpg" alt="Термос 610 мл — аксессуар для грузовика TruckStop Тбилиси" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-TM-02</p>
+            <h3 class="text-sm font-medium leading-snug">Термос 610 мл</h3>
+          </div>
+        </div>
+      </article>
+      <article class="product-cell bg-white" data-cat="light">
+        <div class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden relative">
+            <picture>
+              <source srcset="truckstop-images/products/25_fonar.webp" type="image/webp" />
+              <img src="truckstop-images/products/25_fonar.jpg" alt="Фонарь налобный — аксессуар для грузовика TruckStop Тбилиси" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-FL-01</p>
+            <h3 class="text-sm font-medium leading-snug">Фонарь налобный</h3>
+          </div>
+        </div>
+      </article>
+      <article class="product-cell bg-white" data-cat="supplies">
+        <div class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden relative">
+            <picture>
+              <source srcset="truckstop-images/products/14_kanistra.webp" type="image/webp" />
+              <img src="truckstop-images/products/14_kanistra.jpg" alt="Канистра 10 л — аксессуар для грузовика TruckStop Тбилиси" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-CAN-10</p>
+            <h3 class="text-sm font-medium leading-snug">Канистра 10 л</h3>
+          </div>
+        </div>
+      </article>
+      <article class="product-cell bg-white" data-cat="light">
+        <div class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden relative">
+            <picture>
+              <source srcset="truckstop-images/products/05_gabarity.webp" type="image/webp" />
+              <img src="truckstop-images/products/05_gabarity.jpg" alt="Габариты прицепа — аксессуар для грузовика TruckStop Тбилиси" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-LED-01</p>
+            <h3 class="text-sm font-medium leading-snug">Габариты прицепа</h3>
+          </div>
+        </div>
+      </article>
+      <article class="product-cell bg-white" data-cat="comfort">
+        <div class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden relative">
+            <picture>
+              <source srcset="truckstop-images/products/03_aromatizator.webp" type="image/webp" />
+              <img src="truckstop-images/products/03_aromatizator.jpg" alt="Ароматизатор — аксессуар для грузовика TruckStop Тбилиси" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-AIR-01</p>
+            <h3 class="text-sm font-medium leading-snug">Ароматизатор</h3>
+          </div>
+        </div>
+      </article>
+      <article class="product-cell bg-white" data-cat="comfort">
+        <div class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden relative">
+            <picture>
+              <source srcset="truckstop-images/products/12_zaryadka.webp" type="image/webp" />
+              <img src="truckstop-images/products/12_zaryadka.jpg" alt="Зарядка в прикуриватель — аксессуар для грузовика TruckStop Тбилиси" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-CHG-01</p>
+            <h3 class="text-sm font-medium leading-snug">Зарядка в прикуриватель</h3>
+          </div>
+        </div>
+      </article>
+      <article class="product-cell bg-white" data-cat="supplies">
+        <div class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden relative">
+            <picture>
+              <source srcset="truckstop-images/products/31_schetka.webp" type="image/webp" />
+              <img src="truckstop-images/products/31_schetka.jpg" alt="Щётка для снега — аксессуар для грузовика TruckStop Тбилиси" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-BR-01</p>
+            <h3 class="text-sm font-medium leading-snug">Щётка для снега</h3>
+          </div>
+        </div>
+      </article>
+      <article class="product-cell bg-white" data-cat="comfort">
+        <div class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden relative">
+            <picture>
+              <source srcset="truckstop-images/products/16_kovrik.webp" type="image/webp" />
+              <img src="truckstop-images/products/16_kovrik.jpg" alt="Коврик в салон — аксессуар для грузовика TruckStop Тбилиси" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-MAT-01</p>
+            <h3 class="text-sm font-medium leading-snug">Коврик в салон</h3>
+          </div>
+        </div>
+      </article>
+      <article class="product-cell bg-white" data-cat="comfort">
+        <div class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden relative">
+            <picture>
+              <source srcset="truckstop-images/products/01_cup_450ml.webp" type="image/webp" />
+              <img src="truckstop-images/products/01_cup_450ml.jpg" alt="Кружка 450 мл — аксессуар для грузовика TruckStop Тбилиси" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-CUP-01</p>
+            <h3 class="text-sm font-medium leading-snug">Кружка 450 мл</h3>
+          </div>
+        </div>
+      </article>
+      <article class="product-cell bg-white" data-cat="comfort">
+        <div class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden relative">
+            <picture>
+              <source srcset="truckstop-images/products/21_pylesos.webp" type="image/webp" />
+              <img src="truckstop-images/products/21_pylesos.jpg" alt="Пылесос автомобильный — аксессуар для грузовика TruckStop Тбилиси" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-VAC-01</p>
+            <h3 class="text-sm font-medium leading-snug">Пылесос автомобильный</h3>
+          </div>
+        </div>
+      </article>
     </div>
   </section>
 
@@ -277,59 +618,30 @@
   </footer>
 
   <script>
-    const products = [
-      { id: "19_multivarka", code: "TS-MV-24", name: "Мультиварка 24В" },
-      { id: "27_chainik500", code: "TS-KET-05", name: "Чайник 24В 0.5л" },
-      { id: "26_chainik12", code: "TS-KET-12", name: "Чайник 24В 1.2л" },
-      { id: "07_derzhatel", code: "TS-HOLD-01", name: "Держатель телефона" },
-      { id: "08_derzhatel2", code: "TS-HOLD-02", name: "Держатель планшета" },
-      { id: "24_termokruzhka", code: "TS-TM-01", name: "Термокружка" },
-      { id: "23_termo610", code: "TS-TM-02", name: "Термос 610 мл" },
-      { id: "25_fonar", code: "TS-FL-01", name: "Фонарь налобный" },
-      { id: "14_kanistra", code: "TS-CAN-10", name: "Канистра 10 л" },
-      { id: "05_gabarity", code: "TS-LED-01", name: "Габариты прицепа" },
-      { id: "03_aromatizator", code: "TS-AIR-01", name: "Ароматизатор" },
-      { id: "12_zaryadka", code: "TS-CHG-01", name: "Зарядка в прикуриватель" },
-      { id: "31_schetka", code: "TS-BR-01", name: "Щётка для снега" },
-      { id: "16_kovrik", code: "TS-MAT-01", name: "Коврик в салон" },
-      { id: "01_cup_450ml", code: "TS-CUP-01", name: "Кружка 450 мл" },
-      { id: "21_pylesos", code: "TS-VAC-01", name: "Пылесос автомобильный" },
-    ];
-
-    const grid = document.getElementById('product-grid');
-    products.forEach(p => {
-      const article = document.createElement('article');
-      article.className = 'product-cell bg-white';
-      article.innerHTML = `
-        <a href="#" class="block group">
-          <div class="aspect-square bg-[#f8f8f8] overflow-hidden relative">
-            <picture>
-              <source srcset="truckstop-images/products/${p.id}.webp" type="image/webp" />
-              <img
-                src="truckstop-images/products/${p.id}.jpg"
-                alt="${p.name} — аксессуар для грузовика TruckStop Тбилиси"
-                class="w-full h-full object-contain p-4 lazy group-hover:scale-105 transition-transform duration-300"
-                width="600" height="600"
-                loading="lazy" decoding="async"
-              />
-            </picture>
-          </div>
-          <div class="p-3 border-t border-[#cacaca]">
-            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">${p.code}</p>
-            <h3 class="text-sm font-medium leading-snug">${p.name}</h3>
-          </div>
-        </a>
-      `;
-      grid.appendChild(article);
-    });
-
-    document.querySelectorAll('img.lazy').forEach(img => {
-      if (img.complete) img.classList.add('loaded');
-      else {
-        img.addEventListener('load', () => img.classList.add('loaded'));
-        img.addEventListener('error', () => { img.classList.add('loaded'); img.style.opacity = '0.3'; });
-      }
-    });
+    (function () {
+      document.querySelectorAll('img.lazy').forEach(function (img) {
+        if (img.complete) img.classList.add('loaded');
+        else {
+          img.addEventListener('load', function () { img.classList.add('loaded'); });
+          img.addEventListener('error', function () { img.classList.add('loaded'); img.style.opacity = '0.3'; });
+        }
+      });
+      var buttons = document.querySelectorAll('[data-filter]');
+      var cards = document.querySelectorAll('#product-grid [data-cat]');
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var f = btn.getAttribute('data-filter');
+          buttons.forEach(function (b) {
+            var on = b === btn;
+            b.setAttribute('aria-pressed', on ? 'true' : 'false');
+            b.classList.toggle('pill-ghost', on);
+            b.classList.toggle('border', !on);
+            b.classList.toggle('border-[#cacaca]', !on);
+          });
+          cards.forEach(function (c) { c.hidden = !(f === 'all' || c.getAttribute('data-cat') === f); });
+        });
+      });
+    })();
   </script>
 </body>
 </html>
