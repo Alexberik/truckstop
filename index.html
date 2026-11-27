@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TruckStop — всё для кабины грузовика</title>
+  <meta name="description" content="Аксессуары и товары для грузовых автомобилей. Продажа с машины на окружной Тбилиси + онлайн." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --ink: #000000;
+      --paper: #ffffff;
+      --concrete: #cacaca;
+      --ash: #616161;
+      --accent: #e85d04;
+    }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .logo-plate {
+      background: #000;
+      color: #fff;
+      padding: 0.4rem 0.9rem;
+      border-radius: 4px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-size: 0.95rem;
+    }
+    .pill {
+      border-radius: 9999px;
+      padding: 0.6rem 1.4rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: all 0.15s ease;
+    }
+    .pill-primary {
+      background: #000;
+      color: #fff;
+    }
+    .pill-primary:hover { background: #222; }
+    .pill-ghost {
+      background: #fff;
+      color: #000;
+      border: 1px solid #000;
+    }
+    .product-cell {
+      border: 1px solid var(--concrete);
+      background: #fff;
+    }
+    img.lazy {
+      opacity: 0;
+      transition: opacity 0.35s ease;
+    }
+    img.lazy.loaded {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-white text-black antialiased">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-white border-b border-[#cacaca]">
+    <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+      <a href="/" class="logo-plate">TruckStop</a>
+      <nav class="hidden md:flex gap-6 text-xs uppercase tracking-wider">
+        <a href="#catalog" class="hover:opacity-60">Каталог</a>
+        <a href="#about" class="hover:opacity-60">О нас</a>
+        <a href="#contact" class="hover:opacity-60">Контакты</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <span class="text-xs text-[#616161] hidden sm:inline">Тбилиси · Окружная</span>
+        <a href="#catalog" class="pill pill-primary text-xs">Каталог</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="border-b border-[#cacaca]">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2">
+      <div class="aspect-[4/3] md:aspect-auto bg-[#f5f5f5] overflow-hidden">
+        <picture>
+          <source srcset="images/brand/banner.webp" type="image/webp" />
+          <img
+            src="images/brand/banner.jpg"
+            alt="TruckStop — товары для грузовиков"
+            class="w-full h-full object-cover"
+            width="1600"
+            height="675"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </picture>
+      </div>
+      <div class="flex flex-col justify-center p-8 md:p-12 bg-black text-white">
+        <p class="text-xs uppercase tracking-[0.2em] text-[#e85d04] mb-3">Окружная Тбилиси</p>
+        <h1 class="text-3xl md:text-4xl font-medium uppercase leading-tight tracking-tight mb-4">
+          Всё для вашей<br>кабины
+        </h1>
+        <p class="text-sm text-gray-300 mb-8 max-w-sm">
+          24В техника, держатели, освещение, термосы и расходники. Продажа с машины + онлайн.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#catalog" class="pill pill-primary bg-white text-black hover:bg-gray-100">Смотреть каталог</a>
+          <a href="#contact" class="pill pill-ghost border-white text-white hover:bg-white hover:text-black">Где мы</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="max-w-6xl mx-auto px-4 py-8">
+    <div class="flex flex-wrap gap-2">
+      <button class="pill pill-ghost text-xs">Все</button>
+      <button class="pill border border-[#cacaca] text-xs hover:border-black">24В Кухня</button>
+      <button class="pill border border-[#cacaca] text-xs hover:border-black">Держатели</button>
+      <button class="pill border border-[#cacaca] text-xs hover:border-black">Освещение</button>
+      <button class="pill border border-[#cacaca] text-xs hover:border-black">Комфорт</button>
+      <button class="pill border border-[#cacaca] text-xs hover:border-black">Расходники</button>
+    </div>
+  </section>
+
+  <!-- CATALOG -->
+  <section id="catalog" class="max-w-6xl mx-auto px-4 pb-16">
+    <h2 class="text-xl uppercase tracking-tight font-medium mb-6">Каталог</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-px bg-[#cacaca] border border-[#cacaca]">
+
+      <article class="product-cell bg-white">
+        <a href="#" class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden">
+            <picture>
+              <source srcset="images/products/19_multivarka.webp" type="image/webp" />
+              <img src="images/products/19_multivarka.jpg" alt="Мультиварка 24В" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-MV-24</p>
+            <h3 class="text-sm font-medium">Мультиварка 24В</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="product-cell bg-white">
+        <a href="#" class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden">
+            <picture>
+              <source srcset="images/products/27_chainik500.webp" type="image/webp" />
+              <img src="images/products/27_chainik500.jpg" alt="Чайник 24В" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-KET-24</p>
+            <h3 class="text-sm font-medium">Чайник 24В 0.5л</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="product-cell bg-white">
+        <a href="#" class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden">
+            <picture>
+              <source srcset="images/products/07_derzhatel.webp" type="image/webp" />
+              <img src="images/products/07_derzhatel.jpg" alt="Держатель телефона" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-HOLD-01</p>
+            <h3 class="text-sm font-medium">Держатель телефона</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="product-cell bg-white">
+        <a href="#" class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden">
+            <picture>
+              <source srcset="images/products/24_termokruzhka.webp" type="image/webp" />
+              <img src="images/products/24_termokruzhka.jpg" alt="Термокружка" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-TM-01</p>
+            <h3 class="text-sm font-medium">Термокружка</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="product-cell bg-white">
+        <a href="#" class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden">
+            <picture>
+              <source srcset="images/products/25_fonar.webp" type="image/webp" />
+              <img src="images/products/25_fonar.jpg" alt="Фонарь" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-FL-01</p>
+            <h3 class="text-sm font-medium">Фонарь налобный</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="product-cell bg-white">
+        <a href="#" class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden">
+            <picture>
+              <source srcset="images/products/14_kanistra.webp" type="image/webp" />
+              <img src="images/products/14_kanistra.jpg" alt="Канистра для воды" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-CAN-10</p>
+            <h3 class="text-sm font-medium">Канистра 10 л</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="product-cell bg-white">
+        <a href="#" class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden">
+            <picture>
+              <source srcset="images/products/05_gabarity.webp" type="image/webp" />
+              <img src="images/products/05_gabarity.jpg" alt="Габаритные огни" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-LED-01</p>
+            <h3 class="text-sm font-medium">Габариты для прицепа</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="product-cell bg-white">
+        <a href="#" class="block">
+          <div class="aspect-square bg-[#f8f8f8] overflow-hidden">
+            <picture>
+              <source srcset="images/products/03_aromatizator.webp" type="image/webp" />
+              <img src="images/products/03_aromatizator.jpg" alt="Ароматизатор" class="w-full h-full object-contain p-4 lazy" width="600" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="p-3 border-t border-[#cacaca]">
+            <p class="text-[10px] uppercase tracking-wider text-[#616161] mb-0.5">TS-AIR-01</p>
+            <h3 class="text-sm font-medium">Ароматизатор в кабину</h3>
+          </div>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="bg-black text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="logo-plate inline-block mb-4">TruckStop</div>
+        <p class="text-sm text-gray-400">Аксессуары и товары для грузовых автомобилей.<br>Продажа с машины на окружной Тбилиси.</p>
+      </div>
+      <div>
+        <h4 class="text-xs uppercase tracking-wider mb-3 text-gray-400">Контакты</h4>
+        <p class="text-sm">Тбилиси, Окружная дорога</p>
+        <p class="text-sm mt-1">Telegram / WhatsApp — скоро</p>
+      </div>
+      <div>
+        <h4 class="text-xs uppercase tracking-wider mb-3 text-gray-400">Соцсети</h4>
+        <div class="flex gap-3 text-sm">
+          <a href="#" class="hover:text-[#e85d04]">Instagram</a>
+          <a href="#" class="hover:text-[#e85d04]">Facebook</a>
+          <a href="#" class="hover:text-[#e85d04]">TikTok</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Native lazy loading + smooth fade-in
+    document.querySelectorAll('img.lazy').forEach(img => {
+      if (img.complete) {
+        img.classList.add('loaded');
+      } else {
+        img.addEventListener('load', () => img.classList.add('loaded'));
+        img.addEventListener('error', () => img.classList.add('loaded'));
+      }
+    });
+  </script>
+</body>
+</html>
