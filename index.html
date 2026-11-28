@@ -1,1 +1,145 @@
-SEE_FILE
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Truck Stop | Truck Accessories in Tbilisi</title>
+<meta name="description" content="24V gear, holders, lighting, safety for drivers in Tbilisi. Order via WhatsApp.">
+<link rel="canonical" href="https://alexberik.github.io/truckstop/">
+<link rel="alternate" hreflang="en" href="https://alexberik.github.io/truckstop/">
+<link rel="alternate" hreflang="ru" href="https://alexberik.github.io/truckstop/ru/">
+<link rel="alternate" hreflang="ka" href="https://alexberik.github.io/truckstop/ka/">
+<meta name="theme-color" content="#0c1217">
+<style>
+:root{--bg:#0c1217;--card:#1a222b;--line:#2a333d;--text:#f2f4f6;--muted:#9aa3ad;--accent:#e85b2a}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer;border:0;background:0}
+.hdr{position:sticky;top:0;z-index:50;background:rgba(12,18,23,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 20px}
+.brand{display:flex;align-items:center;gap:8px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:14px}
+.brand img{width:32px;height:32px}.nav a{margin-left:14px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.nav a:hover,.nav a.on{color:#fff}.cta{background:var(--accent);color:#fff;padding:8px 14px;border-radius:999px;font-size:11px;font-weight:700;text-transform:uppercase;transition:.2s}
+.cta:hover{transform:translateY(-2px);filter:brightness(1.1)}
+.hero{position:relative;min-height:80vh;display:flex;align-items:flex-end;padding:48px 20px;overflow:hidden}
+.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:ken 18s ease-in-out infinite alternate}
+@keyframes ken{from{transform:scale(1.05)}to{transform:scale(1.14) translateX(-1%)}}
+.hero .ov{position:absolute;inset:0;background:linear-gradient(105deg,rgba(8,12,16,.94),rgba(8,12,16,.4))}
+.hero-in{position:relative;z-index:1;max-width:1100px;width:100%;margin:0 auto}
+.kicker{opacity:0;transform:translateY(16px);color:var(--accent);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
+.hero h1{opacity:0;transform:translateY(18px);font-size:clamp(36px,6vw,68px);line-height:.95;font-weight:800;margin:12px 0 14px;max-width:10ch}
+.hero p{opacity:0;transform:translateY(18px);color:#c5ced6;max-width:380px;margin-bottom:22px}
+.acts{opacity:0;transform:translateY(18px);display:flex;flex-wrap:wrap;gap:10px}
+.ready .kicker,.ready h1,.ready p,.ready .acts{opacity:1;transform:none;transition:opacity .55s cubic-bezier(.22,1,.36,1),transform .55s cubic-bezier(.22,1,.36,1)}
+.ready h1{transition-delay:.08s}.ready p{transition-delay:.16s}.ready .acts{transition-delay:.24s}
+.btn{display:inline-flex;padding:12px 20px;border-radius:999px;font-size:12px;font-weight:700;text-transform:uppercase;transition:.2s}
+.btn:active{transform:scale(.96)}.bp{background:var(--accent);color:#fff}.bp:hover{filter:brightness(1.1);transform:translateY(-2px)}
+.bgh{border:1px solid rgba(255,255,255,.3);color:#fff}.bwa{background:#1faa55;color:#fff}
+.cats{display:flex;flex-wrap:wrap;gap:8px;padding:16px 20px;border-bottom:1px solid var(--line);background:#141b22}
+.cat{padding:10px 14px;border-radius:999px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);cursor:pointer;transition:.2s}
+.cat.on,.cat:hover{background:rgba(232,91,42,.15);color:#fff;border-color:var(--accent)}
+.sec{max-width:1100px;margin:0 auto;padding:48px 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;cursor:pointer;transition:transform .3s cubic-bezier(.22,1,.36,1),box-shadow .3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 16px 36px rgba(0,0,0,.4)}
+.card .im{aspect-ratio:1;background:#0f151b;padding:12px}.card .im img{width:100%;height:100%;object-fit:contain;transition:transform .4s;opacity:0}
+.card .im img.ok{opacity:1}.card:hover .im img{transform:scale(1.06)}
+.card .inf{padding:12px;border-top:1px solid var(--line);font-size:13px}
+.sku{font-size:9px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
+.wa{display:inline-block;margin-top:8px;background:#1faa55;color:#fff;padding:6px 10px;border-radius:999px;font-size:10px;font-weight:700}
+.del{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+.box h3{margin-bottom:10px}.box p,.box li{color:var(--muted);font-size:14px;line-height:1.6}
+.box ul{margin-top:10px;list-style:none}.box li:before{content:"— ";color:var(--accent)}
+.ft{border-top:1px solid var(--line);padding:32px 20px;font-size:13px;color:var(--muted)}
+.float{position:fixed;right:16px;bottom:16px;background:#25D366;color:#fff;padding:12px 16px;border-radius:999px;font-size:12px;font-weight:700;z-index:40;animation:pulse 4.5s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.82);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;z-index:100;padding:16px;opacity:0;visibility:hidden;transition:.3s}
+.modal.open{opacity:1;visibility:visible}
+.mbox{background:var(--card);border-radius:14px;max-width:820px;width:100%;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;transform:translateY(16px) scale(.97);transition:transform .32s cubic-bezier(.22,1,.36,1);position:relative}
+.modal.open .mbox{transform:none}
+.mbox img{width:100%;max-height:55vh;object-fit:contain;background:#0f151b;padding:16px}
+.mb{padding:20px}.mb h2{margin:8px 0 10px}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s}.reveal.vis{opacity:1;transform:none}
+@media(max-width:700px){.del,.mbox{grid-template-columns:1fr}.nav a{display:none}.nav a.lang{display:inline}.float{left:16px;right:16px;text-align:center}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.kicker,h1,p,.acts,.reveal{opacity:1;transform:none}}
+</style></head><body>
+<header class="hdr">
+<a class="brand" href="/"><img src="truckstop-images/brand/logo.webp" alt="" onerror="this.src='truckstop-images/brand/logo.jpg'">Truck Stop</a>
+<nav class="nav">
+<a href="#catalog">Catalog</a><a href="#delivery">Delivery</a>
+<a class="lang on" href="/">EN</a><a class="lang" href="/ru/">RU</a><a class="lang" href="/ka/">KA</a>
+<a class="cta" href="https://wa.me/995511493394" target="_blank" rel="noopener">WhatsApp</a>
+</nav></header>
+<section class="hero" id="hero">
+<img class="bg" src="truckstop-images/brand/banner.jpg" alt="">
+<div class="ov"></div>
+<div class="hero-in">
+<div class="kicker">Tbilisi · Online store</div>
+<h1>Everything for your cabin</h1>
+<p>24V appliances, holders, lighting and safety gear. Order via WhatsApp — delivery across Georgia.</p>
+<div class="acts">
+<a class="btn bp" href="https://wa.me/995511493394?text=Hello%20Truck%20Stop!" target="_blank" rel="noopener">Order via WhatsApp</a>
+<a class="btn bgh" href="#catalog">Browse catalog</a>
+</div></div></section>
+<div class="cats" id="cats">
+<button class="cat on" data-f="all">All</button>
+<button class="cat" data-f="kitchen">24V Kitchen</button>
+<button class="cat" data-f="holders">Holders</button>
+<button class="cat" data-f="light">Lighting</button>
+<button class="cat" data-f="comfort">Comfort</button>
+</div>
+<section class="sec reveal" id="catalog"><h2 style="margin-bottom:20px">Catalog</h2><div class="grid" id="grid"></div></section>
+<section class="sec reveal" id="delivery"><div class="del">
+<div class="box"><h3>How ordering works</h3>
+<p>Pick a product and message us on WhatsApp. We confirm stock and arrange delivery.</p>
+<ul><li>Order in 1 minute</li><li>Delivery agreed individually</li><li>Real driver needs</li></ul></div>
+<div class="box"><div style="color:var(--accent);font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:700">Delivery</div>
+<div style="font-size:20px;font-weight:700;margin:8px 0">Tbilisi & Georgia</div>
+<p>Fast replies during the day.</p>
+<a class="btn bp" style="margin-top:12px" href="https://wa.me/995511493394?text=About%20delivery" target="_blank" rel="noopener">Ask about delivery</a>
+</div></div></section>
+<footer class="ft" id="contact">
+<p><a href="https://wa.me/995511493394" target="_blank" rel="noopener">WhatsApp +995 511 493 394</a> · Tbilisi, Georgia</p>
+<p style="margin-top:8px">© 2026 Truck Stop · YOUR CAB. YOUR WORLD.</p>
+</footer>
+<a class="float" href="https://wa.me/995511493394" target="_blank" rel="noopener">WhatsApp ↗</a>
+<div class="modal" id="modal"><div class="mbox">
+<button onclick="closeM()" style="position:absolute;top:10px;right:10px;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:18px;z-index:2">×</button>
+<img id="mimg" src="" alt=""><div class="mb">
+<div class="sku" id="msku"></div><h2 id="mtitle"></h2><p id="mdesc" style="color:var(--muted);font-size:14px"></p>
+<a class="btn bp" id="mwa" href="#" target="_blank" rel="noopener" style="margin-top:14px">Order via WhatsApp</a>
+</div></div></div>
+<script>
+const items=[{id:"19_multivarka",code:"TS-MV-24",name:"24V Multicooker",cat:"kitchen",desc:"24V multicooker for the cabin."},
+{id:"27_chainik500",code:"TS-KET-05",name:"24V Kettle 0.5L",cat:"kitchen",desc:"Small 24V kettle."},
+{id:"26_chainik12",code:"TS-KET-12",name:"24V Kettle 1.2L",cat:"kitchen",desc:"Larger 24V kettle."},
+{id:"11_duyka",code:"TS-HT-01",name:"Cabin Heater 24V",cat:"kitchen",desc:"24V cabin heater."},
+{id:"07_derzhatel",code:"TS-HOLD-01",name:"Phone Holder",cat:"holders",desc:"Phone holder for rough roads."},
+{id:"08_derzhatel2",code:"TS-HOLD-02",name:"Tablet Holder",cat:"holders",desc:"Holder for phone or tablet."},
+{id:"15_klipsy",code:"TS-CL-01",name:"Cable Clips",cat:"holders",desc:"Clips to organize cables."},
+{id:"12_zaryadka",code:"TS-CHG-01",name:"24V Charger",cat:"holders",desc:"Multi-port 24V charger."},
+{id:"29_charger",code:"TS-CHG-02",name:"USB Charger 24V",cat:"holders",desc:"USB charger for truck socket."},
+{id:"05_gabarity",code:"TS-LED-01",name:"Trailer Lights",cat:"light",desc:"Trailer marker lights."},
+{id:"20_podsvetka",code:"TS-LED-02",name:"Cabin LED Light",cat:"light",desc:"Extra cabin LED lighting."},
+{id:"25_fonar",code:"TS-FL-01",name:"Headlamp",cat:"light",desc:"Hands-free headlamp."},
+{id:"24_termokruzhka",code:"TS-TM-01",name:"Thermo Mug",cat:"comfort",desc:"Keeps drinks hot or cold."},
+{id:"23_termo610",code:"TS-TM-02",name:"Thermos 610ml",cat:"comfort",desc:"Thermos for long routes."},
+{id:"14_kanistra",code:"TS-CAN-10",name:"Water Canister 10L",cat:"comfort",desc:"10L water canister."},
+{id:"16_kovrik",code:"TS-MAT-01",name:"Floor Mat",cat:"comfort",desc:"Cabin floor mat."},
+{id:"31_schetka",code:"TS-BR-01",name:"Snow Brush",cat:"comfort",desc:"Snow and ice brush."},
+{id:"21_pylesos",code:"TS-VAC-01",name:"Car Vacuum",cat:"comfort",desc:"Cabin vacuum."},
+{id:"03_aromatizator",code:"TS-AIR-01",name:"Air Freshener",cat:"comfort",desc:"Cabin air freshener."},
+{id:"32_zhilet",code:"TS-VEST-01",name:"Safety Vest",cat:"comfort",desc:"High-visibility safety vest.",img:"incoming/жилет.jpg"},
+{id:"33_perchatki",code:"TS-GLV-01",name:"Work Gloves",cat:"comfort",desc:"Durable work gloves.",img:"incoming/перчатки.jpg"}];
+const g=document.getElementById('grid');
+function path(p){return p.img?('truckstop-images/'+p.img):('truckstop-images/products/'+p.id+'.jpg')}
+function wa(n){return 'https://wa.me/995511493394?text='+encodeURIComponent('Hello Truck Stop! I want to order: '+n)}
+function render(list){
+ g.innerHTML=list.map(p=>`<article class="card" onclick="openM('${p.id}')"><div class="im"><img src="${path(p)}" alt="${p.name}" loading="lazy" onload="this.classList.add('ok')"></div><div class="inf"><div class="sku">${p.code}</div><div>${p.name}</div><a class="wa" href="${wa(p.name)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">WhatsApp</a></div></article>`).join('');
+}
+function openM(id){const p=items.find(x=>x.id===id);document.getElementById('mimg').src=path(p);document.getElementById('mtitle').textContent=p.name;document.getElementById('msku').textContent=p.code;document.getElementById('mdesc').textContent=p.desc;document.getElementById('mwa').href=wa(p.name);document.getElementById('modal').classList.add('open')}
+function closeM(){document.getElementById('modal').classList.remove('open')}
+document.getElementById('modal').onclick=e=>{if(e.target.id==='modal')closeM()};
+document.querySelectorAll('.cat').forEach(c=>c.onclick=()=>{document.querySelectorAll('.cat').forEach(x=>x.classList.remove('on'));c.classList.add('on');const f=c.dataset.f;render(f==='all'?items:items.filter(p=>p.cat===f))});
+render(items);
+requestAnimationFrame(()=>document.getElementById('hero').classList.add('ready'));
+if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el))}
+else document.querySelectorAll('.reveal').forEach(el=>el.classList.add('vis'));
+</script></body></html>
