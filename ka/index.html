@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="ka">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="ka"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Truck Stop | სატვირთო აქსესუარები თბილისში</title>
-<meta name="description" content="ონლაინ მაღაზია თბილისში. 24V ტექნიკა, სამაგრები. შეკვეთა WhatsApp-ით.">
+<meta name="description" content="ონლაინ მაღაზია თბილისში. 24V ტექნიკა, სამაგრები, ჟილეტი. შეკვეთა WhatsApp-ით.">
 <link rel="canonical" href="https://alexberik.github.io/truckstop/ka/">
 <meta name="theme-color" content="#0c1217">
 <style>
 :root{--bg:#0c1217;--card:#1a222b;--line:#2a333d;--text:#f2f4f6;--muted:#9aa3ad;--accent:#e85b2a}
 *{box-sizing:border-box;margin:0;padding:0}body{font-family:system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
-a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}img{max-width:100%;display:block}button{font:inherit;cursor:pointer;border:0;background:0}
 .header{position:sticky;top:0;z-index:50;background:rgba(12,18,23,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 20px}
-.brand{font-weight:700;letter-spacing:.12em;text-transform:uppercase;display:flex;align-items:center;gap:8px}.brand img{width:32px;height:32px}
-.nav a{margin-left:16px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.nav a:hover,.nav a.active{color:#fff}
-.cta{background:var(--accent);color:#fff;padding:8px 14px;border-radius:999px;font-size:11px;font-weight:700;text-transform:uppercase}
+.brand{font-weight:700;letter-spacing:.12em;text-transform:uppercase;display:flex;align-items:center;gap:8px;font-size:14px}
+.brand img{width:32px;height:32px}.nav a{margin-left:14px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.nav a:hover,.nav a.active{color:#fff}.cta{background:var(--accent);color:#fff;padding:8px 14px;border-radius:999px;font-size:11px;font-weight:700;text-transform:uppercase}
 .hero{position:relative;min-height:75vh;display:flex;align-items:flex-end;padding:40px 20px;overflow:hidden}
-.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.45)}
-.hero .ov{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,12,16,.9),rgba(8,12,16,.3))}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:ken 18s ease-in-out infinite alternate}
+@keyframes ken{from{transform:scale(1.05)}to{transform:scale(1.12)}}
+.hero .ov{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,12,16,.92),rgba(8,12,16,.35))}
 .hero-inner{position:relative;z-index:1;max-width:1100px;width:100%;margin:0 auto}
 .hero h1{font-size:clamp(36px,6vw,64px);line-height:.95;font-weight:800;margin:12px 0 16px;max-width:12ch}
 .hero p{color:#c8d0d8;max-width:380px;margin-bottom:22px}
@@ -25,90 +24,83 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .btn-p{background:var(--accent);color:#fff}.btn-g{border:1px solid rgba(255,255,255,.3);color:#fff}
 .section{max-width:1100px;margin:0 auto;padding:48px 20px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;cursor:pointer;transition:.25s}
-.card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.35)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;cursor:pointer;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 14px 34px rgba(0,0,0,.4)}
 .card .img{aspect-ratio:1;background:#0f151b;padding:12px}.card .img img{width:100%;height:100%;object-fit:contain}
 .card .info{padding:12px;border-top:1px solid var(--line);font-size:13px}
 .sku{font-size:9px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
 .wa{display:inline-block;margin-top:8px;background:#1faa55;color:#fff;padding:6px 10px;border-radius:999px;font-size:10px;font-weight:700}
 .footer{border-top:1px solid var(--line);padding:32px 20px;font-size:13px;color:var(--muted)}
-.float{position:fixed;right:16px;bottom:16px;background:#25D366;color:#fff;padding:12px 16px;border-radius:999px;font-size:12px;font-weight:700;z-index:40}
-.modal{position:fixed;inset:0;background:rgba(0,0,0,.8);display:none;align-items:center;justify-content:center;z-index:100;padding:16px}
-.modal.open{display:flex}.modal-box{background:var(--card);border-radius:14px;max-width:800px;width:100%;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+.float{position:fixed;right:16px;bottom:16px;background:#25D366;color:#fff;padding:12px 16px;border-radius:999px;font-size:12px;font-weight:700;z-index:40;animation:pulse 4.5s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:100;padding:16px}
+.modal.open{display:flex}.modal-box{background:var(--card);border-radius:14px;max-width:800px;width:100%;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;position:relative}
 .modal-box img{width:100%;max-height:50vh;object-fit:contain;background:#0f151b;padding:16px}
 .modal-body{padding:20px}.modal-body h2{margin:8px 0}
-@media(max-width:700px){.modal-box{grid-template-columns:1fr}.nav a{display:none}.nav a.lang{display:inline}}
-</style>
-</head>
-<body>
+@media(max-width:700px){.modal-box{grid-template-columns:1fr}.nav a{display:none}.nav a.lang{display:inline}.float{left:16px;right:16px;text-align:center}}
+</style></head><body>
 <header class="header">
-  <a class="brand" href="/ka/"><img src="../truckstop-images/brand/logo.webp" alt="" onerror="this.src='../truckstop-images/brand/logo.jpg'">Truck Stop</a>
-  <nav class="nav">
-    <a href="#catalog">კატალოგი</a>
-    <a href="#contact">კონტაქტი</a>
-    <a class="lang" href="/">EN</a>
-    <a class="lang" href="/ru/">RU</a>
-    <a class="lang active" href="/ka/">KA</a>
-    <a class="cta" href="https://wa.me/995511493394" target="_blank" rel="noopener">WhatsApp</a>
-  </nav>
-</header>
+<a class="brand" href="/ka/"><img src="../truckstop-images/brand/logo.webp" alt="" onerror="this.src='../truckstop-images/brand/logo.jpg'">Truck Stop</a>
+<nav class="nav">
+<a href="#catalog">კატალოგი</a><a href="#contact">კონტაქტი</a>
+<a class="lang" href="/">EN</a><a class="lang" href="/ru/">RU</a><a class="lang active" href="/ka/">KA</a>
+<a class="cta" href="https://wa.me/995511493394" target="_blank" rel="noopener">WhatsApp</a>
+</nav></header>
 <section class="hero">
-  <img class="bg" src="../truckstop-images/brand/banner.jpg" alt="">
-  <div class="ov"></div>
-  <div class="hero-inner">
-    <div style="color:var(--accent);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700">თბილისი · ონლაინ</div>
-    <h1>ყველაფერი კაბინისთვის</h1>
-    <p>24V ტექნიკა, სამაგრები, განათება. შეკვეთა WhatsApp-ით — მიწოდებას შევთანხმდებით.</p>
-    <a class="btn btn-p" href="https://wa.me/995511493394" target="_blank" rel="noopener">შეკვეთა WhatsApp-ით</a>
-    <a class="btn btn-g" href="#catalog">კატალოგი</a>
-  </div>
-</section>
+<img class="bg" src="../truckstop-images/brand/banner.jpg" alt="">
+<div class="ov"></div>
+<div class="hero-inner">
+<div style="color:var(--accent);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700">თბილისი · ონლაინ</div>
+<h1>ყველაფერი კაბინისთვის</h1>
+<p>24V ტექნიკა, სამაგრები, განათება, ჟილეტი. შეკვეთა WhatsApp-ით.</p>
+<a class="btn btn-p" href="https://wa.me/995511493394" target="_blank" rel="noopener">შეკვეთა WhatsApp-ით</a>
+<a class="btn btn-g" href="#catalog">კატალოგი</a>
+</div></section>
 <section class="section" id="catalog">
-  <h2 style="margin-bottom:20px">კატალოგი</h2>
-  <div class="grid" id="grid"></div>
-</section>
+<h2 style="margin-bottom:20px">კატალოგი</h2>
+<div class="grid" id="grid"></div></section>
 <section class="section" id="contact">
-  <h2 style="margin-bottom:12px">კონტაქტი</h2>
-  <p><a href="https://wa.me/995511493394" target="_blank" rel="noopener">WhatsApp +995 511 493 394</a></p>
-  <p style="margin-top:8px">თბილისი, საქართველო</p>
+<h2 style="margin-bottom:12px">კონტაქტი</h2>
+<p><a href="https://wa.me/995511493394" target="_blank" rel="noopener">WhatsApp +995 511 493 394</a></p>
+<p style="margin-top:8px">თბილისი, საქართველო</p>
 </section>
 <footer class="footer">© 2026 Truck Stop · YOUR CAB. YOUR WORLD.</footer>
 <a class="float" href="https://wa.me/995511493394" target="_blank" rel="noopener">WhatsApp ↗</a>
 <div class="modal" id="modal"><div class="modal-box">
-  <img id="mimg" src="" alt="">
-  <div class="modal-body">
-    <div class="sku" id="msku"></div>
-    <h2 id="mtitle"></h2>
-    <p id="mdesc" style="color:var(--muted);font-size:14px"></p>
-    <a class="btn btn-p" id="mwa" href="#" target="_blank" rel="noopener" style="margin-top:16px">WhatsApp</a>
-    <button class="btn btn-g" onclick="closeM()" style="margin-top:8px;background:transparent;border:1px solid var(--line);color:#fff;cursor:pointer">დახურვა</button>
-  </div>
-</div></div>
+<button onclick="closeM()" style="position:absolute;top:10px;right:10px;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:18px;z-index:2">×</button>
+<img id="mimg" src="" alt=""><div class="modal-body">
+<div class="sku" id="msku"></div><h2 id="mtitle"></h2><p id="mdesc" style="color:var(--muted);font-size:14px"></p>
+<a class="btn btn-p" id="mwa" href="#" target="_blank" rel="noopener" style="margin-top:16px">WhatsApp</a>
+</div></div></div>
 <script>
 const items=[
 {id:"19_multivarka",code:"TS-MV-24",name:"24V Multicooker",desc:"Compact 24V multicooker."},
 {id:"27_chainik500",code:"TS-KET-05",name:"24V Kettle 0.5L",desc:"Small 24V kettle."},
 {id:"26_chainik12",code:"TS-KET-12",name:"24V Kettle 1.2L",desc:"Larger 24V kettle."},
-{id:"07_derzhatel",code:"TS-HOLD-01",name:"Phone Holder",desc:"Reliable phone holder."},
-{id:"08_derzhatel2",code:"TS-HOLD-02",name:"Tablet Holder",desc:"For phone or tablet."},
-{id:"24_termokruzhka",code:"TS-TM-01",name:"Thermo Mug",desc:"Keeps drinks hot or cold."},
-{id:"23_termo610",code:"TS-TM-02",name:"Thermos 610 ml",desc:"Solid thermos."},
-{id:"25_fonar",code:"TS-FL-01",name:"Headlamp",desc:"Hands-free headlamp."},
-{id:"14_kanistra",code:"TS-CAN-10",name:"Water Canister 10L",desc:"10L water canister."},
+{id:"11_duyka",code:"TS-HT-01",name:"Cabin Heater 24V",desc:"24V cabin heater."},
+{id:"07_derzhatel",code:"TS-HOLD-01",name:"Phone Holder",desc:"Phone holder."},
+{id:"08_derzhatel2",code:"TS-HOLD-02",name:"Tablet Holder",desc:"Phone or tablet holder."},
+{id:"15_klipsy",code:"TS-CL-01",name:"Cable Clips",desc:"Cable clips."},
+{id:"12_zaryadka",code:"TS-CHG-01",name:"24V Charger",desc:"24V charger."},
+{id:"29_charger",code:"TS-CHG-02",name:"USB Charger 24V",desc:"USB truck charger."},
 {id:"05_gabarity",code:"TS-LED-01",name:"Trailer Lights",desc:"Marker lights."},
-{id:"03_aromatizator",code:"TS-AIR-01",name:"Air Freshener",desc:"Cabin freshener."},
-{id:"12_zaryadka",code:"TS-CHG-01",name:"24V Charger",desc:"Cigarette lighter charger."},
-{id:"31_schetka",code:"TS-BR-01",name:"Snow Brush",desc:"Winter brush."},
-{id:"16_kovrik",code:"TS-MAT-01",name:"Floor Mat",desc:"Cabin floor mat."},
-{id:"01_cup_450ml",code:"TS-CUP-01",name:"Mug 450 ml",desc:"Cabin mug."},
-{id:"21_pylesos",code:"TS-VAC-01",name:"Car Vacuum",desc:"Compact vacuum."}
+{id:"20_podsvetka",code:"TS-LED-02",name:"Cabin LED",desc:"Cabin LED light."},
+{id:"25_fonar",code:"TS-FL-01",name:"Headlamp",desc:"Headlamp."},
+{id:"24_termokruzhka",code:"TS-TM-01",name:"Thermo Mug",desc:"Thermo mug."},
+{id:"23_termo610",code:"TS-TM-02",name:"Thermos 610ml",desc:"Thermos."},
+{id:"14_kanistra",code:"TS-CAN-10",name:"Water Canister 10L",desc:"10L canister."},
+{id:"16_kovrik",code:"TS-MAT-01",name:"Floor Mat",desc:"Floor mat."},
+{id:"31_schetka",code:"TS-BR-01",name:"Snow Brush",desc:"Snow brush."},
+{id:"21_pylesos",code:"TS-VAC-01",name:"Car Vacuum",desc:"Cabin vacuum."},
+{id:"03_aromatizator",code:"TS-AIR-01",name:"Air Freshener",desc:"Air freshener."},
+{id:"32_zhilet",code:"TS-VEST-01",name:"Safety Vest",desc:"High-visibility vest.",img:"incoming/жилет.jpg"},
+{id:"33_perchatki",code:"TS-GLV-01",name:"Work Gloves",desc:"Work gloves.",img:"incoming/перчатки.jpg"}
 ];
 const g=document.getElementById('grid');
+function path(p){return p.img?('../truckstop-images/'+p.img):('../truckstop-images/products/'+p.id+'.jpg')}
 function wa(n){return 'https://wa.me/995511493394?text='+encodeURIComponent('Hello Truck Stop! I want to order: '+n)}
-g.innerHTML=items.map(p=>`<article class="card" onclick="openM('${p.id}')"><div class="img"><img src="../truckstop-images/products/${p.id}.jpg" alt="${p.name}" loading="lazy"></div><div class="info"><div class="sku">${p.code}</div><div>${p.name}</div><a class="wa" href="${wa(p.name)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">WhatsApp</a></div></article>`).join('');
-function openM(id){const p=items.find(x=>x.id===id);document.getElementById('mimg').src='../truckstop-images/products/'+p.id+'.jpg';document.getElementById('mtitle').textContent=p.name;document.getElementById('msku').textContent=p.code;document.getElementById('mdesc').textContent=p.desc;document.getElementById('mwa').href=wa(p.name);document.getElementById('modal').classList.add('open')}
+g.innerHTML=items.map(p=>`<article class="card" onclick="openM('${p.id}')"><div class="img"><img src="${path(p)}" alt="${p.name}" loading="lazy"></div><div class="info"><div class="sku">${p.code}</div><div>${p.name}</div><a class="wa" href="${wa(p.name)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">WhatsApp</a></div></article>`).join('');
+function openM(id){const p=items.find(x=>x.id===id);document.getElementById('mimg').src=path(p);document.getElementById('mtitle').textContent=p.name;document.getElementById('msku').textContent=p.code;document.getElementById('mdesc').textContent=p.desc;document.getElementById('mwa').href=wa(p.name);document.getElementById('modal').classList.add('open')}
 function closeM(){document.getElementById('modal').classList.remove('open')}
 document.getElementById('modal').onclick=e=>{if(e.target.id==='modal')closeM()}
-</script>
-</body>
-</html>
+</script></body></html>
